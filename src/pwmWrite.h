@@ -121,7 +121,7 @@ class Pwm {
     void wr_servo(int pin, float value, double speed, double ke);
     void wr_ch_pair(int ch, uint32_t frequency, uint8_t resolution);
     void wr_duty(int ch, uint32_t duty);
-    void wr_freq_res(int ch, uint32_t frequency, uint8_t resolution);
+    void wr_freq_res(int ch, uint32_t frequency, uint8_t resolution, int pin);
     void wr_phase(int ch, uint32_t duty, uint32_t phase);
     void reset_fields(int ch);
     bool sync = false;
